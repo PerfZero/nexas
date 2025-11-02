@@ -3137,10 +3137,98 @@ a {
     padding: 16px 32px;
   }
 
-  .header__logo{
-    max-width: 180px;
+
+  .hero__title{
+    font-size: 32px;
   }
-  
+
+  .hero__social{
+    padding: 32px 0;
+  }
+
+  .services__info{
+    padding: 32px;
+  }
+
+  .services__item{
+    padding: 32px;
+  }
+
+  .callback-form__wrapper{
+    padding: 32px;
+  }
+
+  .callback__left{
+    padding: 32px;
+  }
+
+  .callback__title{
+    font-size: 32px;
+  }
+
+  .callback__left{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .callback-form__row{
+    gap: 16px;
+    margin-bottom: 12px;
+  }
+
+  .callback-form__row {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.technologies__item{
+  padding: 32px;
+}
+
+.about__left{
+  padding: 32px;
+}
+
+.form-section__title{
+  font-size: 32px;
+}
+
+.accordion__item{
+  padding: 24px;
+}
+
+.section-title{
+  font-size: 32px;
+}
+
+.substitution__left{
+  padding: 32px;
+  gap: 16px;
+}
+
+.substitution-work{
+  padding: 32px;
+  gap: 16px;
+}
+
+.form-section__content{
+  padding: 32px;
+}
+.form-section__row{
+  gap: 16px;
+  margin-bottom: 12px;
+}
+.form-section__row {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+  .hero__left{
+    padding: 48px;
+  }
+ 
+  .nav__link{
+    font-size: 16px;
+  } 
 
   .header{
     padding: 24px;
@@ -3406,6 +3494,8 @@ a {
   .modal__form-row {
     grid-template-columns: 1fr;
   }
+
+
 }
 
 @media (max-width: 768px) {
