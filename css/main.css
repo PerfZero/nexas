@@ -1986,6 +1986,7 @@ a {
 }
 .content-page__right {
   -ms-grid-column-span: 4;
+  height: 590px;
   grid-column: 4 span;
   border-radius: 24px;
 }
