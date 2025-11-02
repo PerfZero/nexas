@@ -1298,6 +1298,10 @@ display: flex;
   background-color: var(--dark-color);
 }
 
+.technologies__arrow{
+  display: none;
+}
+
 .about {
   padding-bottom: 64px;
 }
@@ -4183,4 +4187,383 @@ display: flex;
     gap: 24px;
     border-radius: 10px;
   }
+
+
+  .projects__wrapper{
+    flex-direction: column-reverse;
+  }
+
+  .projects__wrapper{
+    padding: 27px 16px;
+  }
+
+  .projects__slider-wrapper{
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .projects__title{
+    font-size: 24px;
+    margin-bottom: 16px;
+  }
+
+  .projects__subtitle{
+    font-size: 14px;
+  }
+
+  .swiper-button-prev, .swiper-button-next{
+    width: 32px;
+    height: 32px;
+    border-radius: 10px;
+  }
+
+  .projects__wrapper{
+    border-radius: 10px;
+  }
+
+  .projects__text{
+    font-size: 14px;
+  }
+
+  .callback__wrapper{
+    flex-direction: column;
+    display: flex;
+    gap: 16px;
+  }
+
+  .form.callback-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+  }
+  .callback__title{
+    font-size: 20px;
+  }
+
+  .callback__left{
+    flex-direction: row;
+    background-position: 90% 100%;
+    overflow: hidden;
+    align-items: flex-end;
+    background-size: contain;
+    background-image: url('../img/form-bg1.svg') !important;
+    position: relative;
+  }
+  .callback__left::before {
+    content: '';
+    position: absolute;
+    top: -50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('../img/form-bg.svg') !important;
+    background-position: inherit;
+    background-size: inherit;
+    background-repeat: inherit;
+    transform: scaleX(-1);
+    z-index: 0;
+    pointer-events: none;
+    transform: rotate(90deg);
+  }
+  .callback__left > * {
+    position: relative;
+    z-index: 1;
+  }
+
+
+  .callback__left svg{
+    width: 40px;
+    transform: rotate(90deg);
+  }
+
+  .callback-form__row {
+    grid-template-columns: repeat(1, 1fr);
 }
+
+.callback-form__wrapper{
+  padding: 24px 16px;
+}
+
+.callback-form__title{
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.custom-checkbox{
+  align-items: flex-start;
+}
+
+.callback-form__row{
+  gap: 12px;
+}
+
+.callback-form__wrapper .callback-form__btn{
+  color:#fff;
+  width: 100%;
+  border-radius: 10px;
+  padding: 16px;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  background-color: var(--acent-color);
+  transition: all 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 16px;
+}
+
+.callback-form > .callback-form__btn{
+  display: none;
+}
+
+.technologies__title{
+  font-size: 24px;
+  padding: 16px;
+  border-radius: 10px;
+}
+
+.technologies__grid{
+  display: flex;
+  flex-direction: column;
+}
+
+.technologies__item{
+  display: flex
+  ;
+          gap: 16px;
+          padding: 16px;
+          border-radius: 10px;
+          align-items: flex-start;
+          position: relative;
+          justify-content: space-between;
+}
+
+.technologies__subtitle{
+  font-size: 16px;
+  margin-top: 14px;
+}
+
+.technologies__arrow{
+  margin-top: 14px;
+}
+
+.technologies__icon{
+  width: 65px;
+  height: 65px;
+  margin-bottom: 0;
+}
+
+.technologies__list{
+  display: none;
+}
+
+.technologies__item.active .technologies__list{
+  display: block;
+}
+
+.technologies__arrow{
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  justify-content: center;
+  cursor: pointer;
+  flex-shrink: 0;
+  transform: rotate(90deg);
+  transition: transform 0.3s ease;
+}
+
+.technologies__item.active .technologies__arrow{
+  transform: rotate(-90deg);
+}
+
+.about__wrapper{
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.about__img{
+  border-radius: 10px;
+}
+
+.about__right{
+  gap: 16px;
+}
+
+.about__title{
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.about__subtitle{
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.about__text{
+  font-size: 12px;
+}
+.form-section__top{
+  padding: 24px 16px;
+  border-radius: 10px;
+}
+
+.form-section__title{
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+.form-section__arrow{
+  width: 32px;
+  height: 32px;
+}
+
+.form-section__content{
+  padding: 24px 16px;
+  border-radius: 10px;
+}
+.form-section__row{
+  flex-direction: column;
+  display: flex;
+}
+.faq__wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.accordion__item{
+  padding: 16px;
+  border-radius: 10px;
+}
+.accordion__question{
+  font-size: 14px;
+}
+
+.accordion__answer{
+  font-size: 12px;
+}
+
+.faq__left{
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  gap: 10px;
+  background-color: transparent;
+  border-radius: 10px;
+}
+
+.faq__title{
+  background-color: #353A3E;
+  padding: 16px;
+  height: 91px;
+  border-radius: 10px;
+}
+
+.faq__icon{
+  margin: 0;
+  max-width: 91px;
+  width: 100%;
+  background-color: #353A3E;
+  display: flex;
+  padding: 15px;
+  border-radius: 10px;
+  align-items: center;
+  justify-content: center;
+  height: 91px;
+}
+
+.substitution__grid{
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.substitution__left{
+  padding: 48px;
+  gap: 0;
+  border-radius: 10px;
+}
+
+.substitution-work{
+  padding: 48px;
+  border-radius: 10px;
+  gap: 0;
+}
+
+.substitution-work__text{
+  font-size: 12px;
+  margin-bottom: 16px;
+}
+
+.substitution__title{
+  font-size: 18px;
+}
+
+.substitution__subtitle{
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.substitution__text{
+  font-size: 12px;
+}
+
+.footer__bottom{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.footer__nav-item{
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.footer__social{
+  gap: 16px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer__social-item{
+  width: 32px;
+  height: 32px;
+}
+
+.footer__logo svg{
+  width: 130px;
+}
+
+.footer{
+    border-radius: 10px;
+    padding: 32px;
+}
+
+.footer__nav{
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer__nav-item{
+  width: 100%;
+}
+
+.footer__nav-link{
+  font-size: 12px;
+}
+
+.footer__top{
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.footer__top-item{
+  width: 100%;
+}
+
+.footer__top-link{
+  font-size: 12px;
+}
+}
+
