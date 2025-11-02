@@ -3129,12 +3129,16 @@ a {
   }
 
   .header__phone{
-    font-size: 20px;
+    font-size: 16px;
   }
 
   .header__btn{
     font-size: 16px;
-    padding: 16px 32px;
+    padding: 16px 24px;
+  }
+
+  .logo.header__logo svg{
+    width: 150px;
   }
 
 
@@ -3204,6 +3208,10 @@ a {
 .substitution__left{
   padding: 32px;
   gap: 16px;
+}
+
+.header .container{
+  padding: 0;
 }
 
 .substitution-work{
