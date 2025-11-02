@@ -52,19 +52,36 @@
           <li class="nav__item"><a href="page-services.html" class="nav__link">Услуги</a></li>
           <li class="nav__item"><a href="page-projects.html" class="nav__link">Проекты</a></li>
           <li class="nav__item"><a href="page-contacts.html" class="nav__link">Контакты</a></li>
-          <li class="nav__item"><a href="page-about.html" class="nav__link">О компании</a></li>
+          <li class="nav__item"><a href="page-about.html" class="nav__link">О компании</a></li>
         </ul>
+        <div class="nav__bottom">
+          <button class="btn-reset btn nav__btn">Обсудить проект</button>
+          <a href="tel:+78121234255" class="nav__phone">+7 (812) 123-42-55</a>
+        </div>
       </nav>
       <div class="header__contacts">
-        <a href="tel:+78121234255" class="header__phone">+7 (812) 123-42-55</a>
+        <a href="tel:+78121234255" class="header__phone">+7 (812) 123-42-55</a>
+        <a href="tel:+78121234255" class="header__phone-icon">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.1805 15.9951C10.4794 15.9816 9.69945 15.7833 8.95781 15.4565C5.2992 13.8497 2.58286 11.2514 0.811045 7.67272C0.448115 6.94031 0.164083 6.17185 0.0513716 5.35606C0.00403294 5.01577 -0.0094924 4.66647 0.00628716 4.32393C0.0288294 3.86421 0.222693 3.46758 0.549555 3.14081C0.973349 2.7194 1.39489 2.29348 1.82545 1.88107C2.34392 1.38304 2.96383 1.38304 3.47779 1.88558C4.13602 2.5301 4.78524 3.18588 5.4322 3.84167C5.69369 4.10759 5.84022 4.42534 5.78837 4.80845C5.74779 5.10592 5.58774 5.33803 5.38261 5.54311C5.02193 5.90368 4.65675 6.25974 4.29382 6.61806C4.08643 6.82088 4.07967 6.85919 4.19238 7.11835C4.50797 7.83272 4.96783 8.45245 5.47503 9.04063C6.18737 9.86769 6.96958 10.6181 7.88029 11.2221C8.22068 11.4474 8.59488 11.6232 8.9533 11.8238C9.10208 11.9049 9.21028 11.8463 9.31848 11.7381C9.71072 11.3393 10.1007 10.9359 10.4997 10.546C10.8243 10.2283 11.212 10.084 11.6561 10.244C11.8207 10.3026 11.9875 10.4018 12.1137 10.5257C12.79 11.1838 13.4595 11.8486 14.1177 12.5246C14.6001 13.0204 14.6024 13.6379 14.1312 14.1427C13.7187 14.5821 13.2927 15.0103 12.8621 15.434C12.4293 15.8576 11.8905 16.0086 11.1805 15.9996V15.9951Z" fill="white"/>
+            <path d="M15.9977 7.1206C16.0023 7.55554 15.716 7.8823 15.3373 7.92737C14.9518 7.97245 14.5979 7.72906 14.5122 7.35272C14.4085 6.89299 14.3657 6.41524 14.2101 5.97579C13.3626 3.54645 11.6651 2.07713 9.13589 1.57459C9.00064 1.54755 8.86538 1.53403 8.73013 1.51374C8.32437 1.45515 8.03583 1.10585 8.06739 0.70697C8.09895 0.292315 8.43257 -0.0254367 8.8496 0.00160602C9.49206 0.0421701 10.121 0.181891 10.7229 0.411754C13.5068 1.47543 15.2291 3.46758 15.8895 6.37467C15.9234 6.52341 15.9414 6.67665 15.9639 6.82764C15.9797 6.94031 15.991 7.05525 16 7.12285L15.9977 7.1206Z" fill="white"/>
+            <path d="M12.382 7.93639C11.992 7.93639 11.7057 7.6885 11.6246 7.2761C11.4329 6.29805 10.9212 5.52733 10.1097 4.95718C9.68592 4.65971 9.21479 4.47492 8.70759 4.37802C8.26801 4.29464 7.99976 3.91153 8.08091 3.48786C8.16657 3.04616 8.54979 2.79151 8.99613 2.8794C11.0993 3.2918 12.6863 4.86479 13.1191 6.96736C13.2296 7.4992 12.8959 7.93864 12.382 7.93639Z" fill="white"/>
+            </svg>
+            
+        </a>
         <button class="btn-reset btn header__btn">Обсудить проект</button>
       </div>
+      <button class="btn-reset burger" aria-label="Открыть меню">
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+        <span class="burger__line"></span>
+      </button>
     </div>
   </div>
 </header>
 
     <main class="main">
-      <section class="hero">
+  <section class="hero">
   <div class="container">
     <div class="hero__grid">
       <div class="hero__social">
@@ -125,103 +142,66 @@
           </svg>
         </a>
       </div>
-      <div class="hero__slider-wrapper">
-        <div class="swiper-pagination hero__pagination"></div>
-        <div class="swiper hero__slider">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide hero__slide">
-              <div class="hero__left">
-                <h1 class="hero__title">
-                  Комплексные решения для фастфуда
-                </h1>
-                <p class="hero__text">
-                  Системы автоматизации и цифрофизации бизнеса
-                </p>
-                <!-- <div class="swiper-pagination hero__pagination"></div> -->
-              </div>
-
-              <div class="hero__right" style="background-image: url('img/hero-slide-bg-1.png');">
-                <div class="hero__btns">
-                  <div class="swiper-button-prev hero__prev">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M30.6652 35.6609C31.1116 35.2087 31.1116 34.4783 30.6652 34.0261L21.7611 25.0058L30.6652 15.9855C31.1116 15.5333 31.1116 14.7913 30.6652 14.3391C30.2189 13.887 29.4864 13.887 29.0401 14.3391L19.3348 24.1826C18.8884 24.6348 18.8884 25.3652 19.3348 25.8174L29.0401 35.6609C29.4864 36.113 30.2074 36.113 30.6538 35.6609L30.6652 35.6609Z" fill="black" />
-                    </svg>
-                  </div>
-                  <div class="swiper-button-next hero__next">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19.3348 14.3391C18.8884 14.7913 18.8884 15.5217 19.3348 15.9739L28.2389 24.9942L19.3348 34.0145C18.8884 34.4667 18.8884 35.2087 19.3348 35.6609C19.7811 36.113 20.5136 36.113 20.9599 35.6609L30.6652 25.8174C31.1116 25.3652 31.1116 24.6348 30.6652 24.1826L20.9599 14.3391C20.5136 13.887 19.7926 13.887 19.3462 14.3391L19.3348 14.3391Z" fill="black" />
-                    </svg>
-                  </div>
-                </div>
-                <img src="img/hero-slide1.png" alt="" class="hero__img">
-              </div>
-
+        <div class="hero__left">
+          <div class="hero__slide-content hero__slide-content--active" data-slide="0">
+            <h1 class="hero__title">
+              Комплексные решения для фастфуда
+            </h1>
+            <p class="hero__text">
+              Системы автоматизации и цифрофизации бизнеса
+            </p>
+          </div>
+          <div class="hero__slide-content" data-slide="1">
+            <h1 class="hero__title">
+              Инновационные технологии для бизнеса
+            </h1>
+            <p class="hero__text">
+              Полный цикл автоматизации ресторанов
+            </p>
+          </div>
+          <div class="hero__slide-content" data-slide="2">
+            <h1 class="hero__title">
+              Эффективность и надежность
+            </h1>
+            <p class="hero__text">
+              Современные решения для вашего успеха
+            </p>
+          </div>
+          <div class="hero__bullets">
+            <div class="hero__bullet hero__bullet--active" data-slide="0"></div>
+            <div class="hero__bullet" data-slide="1"></div>
+            <div class="hero__bullet" data-slide="2"></div>
+          </div>
+        </div>
+        <div class="hero__right">
+          <div class="hero__image-wrapper hero__image-wrapper--active" data-slide="0" style="background-image: url('img/hero-slide-bg-1.png');">
+            <img src="img/hero-slide1.png" alt="" class="hero__img">
+          </div>
+          <div class="hero__image-wrapper" data-slide="1" style="background-image: url('img/hero-slide-bg-1.png');">
+            <img src="img/hero-slide1.png" alt="" class="hero__img">
+          </div>
+          <div class="hero__image-wrapper" data-slide="2" style="background-image: url('img/hero-slide-bg-1.png');">
+            <img src="img/hero-slide1.png" alt="" class="hero__img">
+          </div>
+          <div class="hero__btns">
+            <div class="hero__prev">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M30.6652 35.6609C31.1116 35.2087 31.1116 34.4783 30.6652 34.0261L21.7611 25.0058L30.6652 15.9855C31.1116 15.5333 31.1116 14.7913 30.6652 14.3391C30.2189 13.887 29.4864 13.887 29.0401 14.3391L19.3348 24.1826C18.8884 24.6348 18.8884 25.3652 19.3348 25.8174L29.0401 35.6609C29.4864 36.113 30.2074 36.113 30.6538 35.6609L30.6652 35.6609Z" fill="black" />
+              </svg>
             </div>
-            <div class="swiper-slide hero__slide">
-              <div class="hero__left">
-                <h1 class="hero__title">
-                  Комплексные решения для фастфуда
-                </h1>
-                <p class="hero__text">
-                  Системы автоматизации и цифрофизации бизнеса
-                </p>
-                <!-- <div class="swiper-pagination hero__pagination"></div> -->
-              </div>
-
-              <div class="hero__right" style="background-image: url('img/hero-slide-bg1.png');">
-                <div class="hero__btns">
-                  <div class="swiper-button-prev hero__prev">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M30.6652 35.6609C31.1116 35.2087 31.1116 34.4783 30.6652 34.0261L21.7611 25.0058L30.6652 15.9855C31.1116 15.5333 31.1116 14.7913 30.6652 14.3391C30.2189 13.887 29.4864 13.887 29.0401 14.3391L19.3348 24.1826C18.8884 24.6348 18.8884 25.3652 19.3348 25.8174L29.0401 35.6609C29.4864 36.113 30.2074 36.113 30.6538 35.6609L30.6652 35.6609Z" fill="black" />
-                    </svg>
-                  </div>
-                  <div class="swiper-button-next hero__next">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19.3348 14.3391C18.8884 14.7913 18.8884 15.5217 19.3348 15.9739L28.2389 24.9942L19.3348 34.0145C18.8884 34.4667 18.8884 35.2087 19.3348 35.6609C19.7811 36.113 20.5136 36.113 20.9599 35.6609L30.6652 25.8174C31.1116 25.3652 31.1116 24.6348 30.6652 24.1826L20.9599 14.3391C20.5136 13.887 19.7926 13.887 19.3462 14.3391L19.3348 14.3391Z" fill="black" />
-                    </svg>
-                  </div>
-                </div>
-                <img src="img/hero-slide1.png" alt="" class="hero__img">
-              </div>
-
-            </div>
-            <div class="swiper-slide hero__slide">
-              <div class="hero__left">
-                <h1 class="hero__title">
-                  Комплексные решения для фастфуда
-                </h1>
-                <p class="hero__text">
-                  Системы автоматизации и цифрофизации бизнеса
-                </p>
-                <!-- <div class="swiper-pagination hero__pagination"></div> -->
-              </div>
-
-              <div class="hero__right" style="background-image: url('img/hero-slide-bg1.png');">
-                <div class="hero__btns">
-                  <div class="swiper-button-prev hero__prev">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M30.6652 35.6609C31.1116 35.2087 31.1116 34.4783 30.6652 34.0261L21.7611 25.0058L30.6652 15.9855C31.1116 15.5333 31.1116 14.7913 30.6652 14.3391C30.2189 13.887 29.4864 13.887 29.0401 14.3391L19.3348 24.1826C18.8884 24.6348 18.8884 25.3652 19.3348 25.8174L29.0401 35.6609C29.4864 36.113 30.2074 36.113 30.6538 35.6609L30.6652 35.6609Z" fill="black" />
-                    </svg>
-                  </div>
-                  <div class="swiper-button-next hero__next">
-                    <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path d="M19.3348 14.3391C18.8884 14.7913 18.8884 15.5217 19.3348 15.9739L28.2389 24.9942L19.3348 34.0145C18.8884 34.4667 18.8884 35.2087 19.3348 35.6609C19.7811 36.113 20.5136 36.113 20.9599 35.6609L30.6652 25.8174C31.1116 25.3652 31.1116 24.6348 30.6652 24.1826L20.9599 14.3391C20.5136 13.887 19.7926 13.887 19.3462 14.3391L19.3348 14.3391Z" fill="black" />
-                    </svg>
-                  </div>
-                </div>
-                <img src="img/hero-slide1.png" alt="" class="hero__img">
-              </div>
-
+            <div class="hero__next">
+              <svg width="50" height="50" viewBox="0 0 50 50" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.3348 14.3391C18.8884 14.7913 18.8884 15.5217 19.3348 15.9739L28.2389 24.9942L19.3348 34.0145C18.8884 34.4667 18.8884 35.2087 19.3348 35.6609C19.7811 36.113 20.5136 36.113 20.9599 35.6609L30.6652 25.8174C31.1116 25.3652 31.1116 24.6348 30.6652 24.1826L20.9599 14.3391C20.5136 13.887 19.7926 13.887 19.3462 14.3391L19.3348 14.3391Z" fill="black" />
+              </svg>
             </div>
           </div>
         </div>
-      </div>
     </div>
 
   </div>
 </section>
 
-      <section class="why-us hero-why-us">
+   <section class="why-us hero-why-us">
         <div class="container">
           <div class="why-us__slider-wrapper">
             <div class="swiper why-us__slider">
@@ -272,7 +252,7 @@
         </div>
 
       </section>
-      <section class="services">
+        <section class="services">
   <div class="container">
     <div class="services__grid">
       <div class="services__info">
@@ -376,7 +356,7 @@
   </div>
 </section>
 
-      <section class="projects">
+      <!--  <section class="projects">
   <div class="container">
     <div class="projects__wrapper" style="background-image: url('img/projects-section-bg.png');">
       <div class="projects__left">
@@ -802,11 +782,11 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
     </main>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
   <div class="container">
     <div class="footer__top">
       <div class="footer__column">
@@ -894,7 +874,7 @@
       </a>
     </div>
   </div>
-</footer>
+</footer> -->
 
   </div>
   <script>
@@ -1126,4 +1106,5 @@
   </script>
 </body>
 
+</html>
 </html>
