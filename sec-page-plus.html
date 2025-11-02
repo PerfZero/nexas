@@ -66,6 +66,12 @@
     <main class="main">
       <section class="sec-page sec-page--with-menu">
         <aside class="sec-page__sidebar">
+          <button class="page-menu__toggle" type="button" aria-label="Открыть меню">
+            <span class="page-menu__toggle-text">Меню</span>
+            <svg class="page-menu__toggle-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 6H20M4 12H20M4 18H20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </button>
           <nav class="page-menu">
             <a href="#section-1" class="page-menu__item">Пункт меню первый</a>
             <a href="#section-2" class="page-menu__item">Второй пункт меню</a>
@@ -303,24 +309,38 @@
 
   <script>
     document.addEventListener('DOMContentLoaded', function() {
+      const menuToggle = document.querySelector('.page-menu__toggle');
+      const pageMenu = document.querySelector('.page-menu');
       const menuItems = document.querySelectorAll('.page-menu__item');
       const sections = document.querySelectorAll('[id^="section-"]');
       
-      menuItems.forEach(item => {
-        item.addEventListener('click', function(e) {
-          e.preventDefault();
-          const targetId = this.getAttribute('href');
-          const targetSection = document.querySelector(targetId);
-          
-          if (targetSection) {
-            const offsetTop = targetSection.offsetTop - 100;
-            window.scrollTo({
-              top: offsetTop,
-              behavior: 'smooth'
-            });
-          }
+      if (menuToggle && pageMenu) {
+        menuToggle.addEventListener('click', function() {
+          pageMenu.classList.toggle('page-menu--open');
+          menuToggle.classList.toggle('page-menu__toggle--active');
         });
-      });
+        
+        menuItems.forEach(item => {
+          item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            const targetSection = document.querySelector(targetId);
+            
+            if (targetSection) {
+              const offsetTop = targetSection.offsetTop - 100;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+              
+              if (window.innerWidth <= 768) {
+                pageMenu.classList.remove('page-menu--open');
+                menuToggle.classList.remove('page-menu__toggle--active');
+              }
+            }
+          });
+        });
+      }
       
       function updateActiveMenuItem() {
         let current = '';
