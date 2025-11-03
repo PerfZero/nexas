@@ -3287,11 +3287,19 @@ display: flex;
   font-family: "Manrope", sans-serif;
 }
 
+.userContent__table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin: 32px 0;
+}
+
 .userContent table {
   width: 100%;
   border-collapse: collapse;
-  margin: 32px 0;
+  margin: 0;
   background: white;
+  min-width: 600px;
 }
 
 .userContent table th {
@@ -3314,9 +3322,6 @@ display: flex;
   color: #000;
   border: 5px solid white;
   vertical-align: top;
-}
-
-.userContent table tr td {
   background: #EAEAEA;
 }
 
@@ -3500,22 +3505,31 @@ display: flex;
     font-size: 16px;
   }
 
-  .userContent table {
-    display: block;
+  .sec-page--with-menu .container{
+    width: 
+    100% !important;
+  }
+
+  .userContent__table-wrapper {
+    width: 100%;
+    max-width: 100%;
     overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
     margin: 24px 0;
+  }
+
+  .userContent table {
+    min-width: 600px;
   }
 
   .userContent table th {
     padding: 16px;
     font-size: 14px;
-    min-width: 120px;
   }
 
   .userContent table td {
     padding: 16px;
     font-size: 14px;
-    min-width: 120px;
   }
 }
 
@@ -3619,6 +3633,15 @@ display: flex;
 @media screen and (max-width: 1440px) {
 .nav__list{
     gap: 16px;
+  }
+
+  .sec-page__wrapper{
+    padding: 32px;
+  }
+
+  .page-menu__item{
+    padding: 18px;
+    font-size: 18px;  
   }
 
   .footer__social{
@@ -4838,6 +4861,12 @@ display: flex;
 .substitution__subtitle{
   font-size: 16px;
   margin-bottom: 16px;
+}
+
+
+
+.sec-page__wrapper{
+  padding: 8px;
 }
 
 .substitution__text{
