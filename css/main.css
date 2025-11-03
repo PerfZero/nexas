@@ -3640,9 +3640,17 @@ display: flex;
   color: var(--acent-color);
 }
 
+.reviews__text-icon{
+  flex-shrink: 0;
+}
+
 @media screen and (max-width: 1440px) {
 .nav__list{
     gap: 16px;
+  }
+
+  .content-form{
+    padding: 32px 0 !important;
   }
 
   .stages__text{
