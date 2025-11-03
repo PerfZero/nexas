@@ -4121,6 +4121,26 @@ display: flex;
     font-size: 24px;
   }
 
+  .modal__close{
+    top: 12px;
+    right: 12px;
+  }
+
+
+  .modal__left-arrow svg{
+    width: 30px;
+  }
+
+  .modal__left-arrow {
+    right: 24px !important;
+  }
+
+  .modal__right{
+    height: 500px;
+    overflow-y: auto;
+  }
+  
+
   .hero__right{
     order: 1;
     height: 250px;
