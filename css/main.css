@@ -854,6 +854,11 @@ display: flex;
   right: unset !important;
   text-align: left;
 }
+
+.sas{
+  padding: 16px 0 ;
+}
+
 .hero__slide-content {
   display: none;
 }
@@ -2040,6 +2045,7 @@ display: flex;
 .content-page .projects {
   padding: 0;
   width: calc(100vw - 96px);
+  max-width: calc(1920px - 96px);
 }
 .content-page .technologies .technologies__grid {
   gap: 12px;
