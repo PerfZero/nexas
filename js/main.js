@@ -78,6 +78,66 @@ heroBullets.forEach((bullet, index) => {
   bullet.addEventListener('click', () => goToSlide(index));
 });
 
+const heroSection = document.querySelector('.hero');
+let isDragging = false;
+let startX = 0;
+let startY = 0;
+let currentX = 0;
+let currentY = 0;
+const dragThreshold = 50;
+
+function getClientX(e) {
+  return e.touches ? e.touches[0].clientX : e.clientX;
+}
+
+function getClientY(e) {
+  return e.touches ? e.touches[0].clientY : e.clientY;
+}
+
+function handleDragStart(e) {
+  isDragging = true;
+  startX = getClientX(e);
+  startY = getClientY(e);
+  currentX = startX;
+  currentY = startY;
+}
+
+function handleDragMove(e) {
+  if (!isDragging) return;
+  e.preventDefault();
+  currentX = getClientX(e);
+  currentY = getClientY(e);
+}
+
+function handleDragEnd(e) {
+  if (!isDragging) return;
+  isDragging = false;
+  
+  const deltaX = currentX - startX;
+  const deltaY = currentY - startY;
+  const absDeltaX = Math.abs(deltaX);
+  const absDeltaY = Math.abs(deltaY);
+  
+  if (absDeltaX > dragThreshold && absDeltaX > absDeltaY) {
+    if (deltaX > 0) {
+      prevSlide();
+    } else {
+      nextSlide();
+    }
+  }
+}
+
+if (heroSection) {
+  heroSection.addEventListener('mousedown', handleDragStart);
+  heroSection.addEventListener('touchstart', handleDragStart);
+  
+  document.addEventListener('mousemove', handleDragMove);
+  document.addEventListener('touchmove', handleDragMove);
+  
+  document.addEventListener('mouseup', handleDragEnd);
+  document.addEventListener('touchend', handleDragEnd);
+}
+
 resetAutoSlide();
 
 // projectsslider

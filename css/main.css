@@ -680,6 +680,10 @@ a {
 .hero {
   padding-top: 64px;
   padding-bottom: 24px;
+  cursor: grab;
+}
+.hero:active {
+  cursor: grabbing;
 }
 .hero__grid {
 display: flex;
