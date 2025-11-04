@@ -681,9 +681,20 @@ a {
   padding-top: 64px;
   padding-bottom: 24px;
   cursor: grab;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-user-drag: none;
+  user-drag: none;
 }
 .hero:active {
   cursor: grabbing;
+}
+.hero img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
 }
 .hero__grid {
 display: flex;
