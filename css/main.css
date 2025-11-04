@@ -1141,7 +1141,7 @@ display: flex;
 }
 .projects__slider-wrapper {
   position: relative;
-  max-width: 1078px;
+  max-width: 910px;
 }
 .projects__slide {
   display: -webkit-box;
