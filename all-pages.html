@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="ru" class="page">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#111111">
+  <title>Все страницы - NATLEX</title>
+  <link rel="preload" href="fonts/ActayWide-Bold.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/vendor.css">
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="css/main.css">
+  <script defer src="js/swiper-bundle.min.js"></script>
+  <script defer src="js/main.js"></script>
+  <style>
+    .pages-list {
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .pages-list h1 {
+      font-size: 48px;
+      margin-bottom: 40px;
+      color: var(--dark-color);
+    }
+    .pages-list__grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+    }
+    .pages-list__item {
+      background: var(--light-color);
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .pages-list__item:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    }
+    .pages-list__link {
+      display: block;
+      font-size: 18px;
+      color: var(--acent-color);
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .pages-list__link:hover {
+      text-decoration: underline;
+    }
+    .pages-list__path {
+      font-size: 14px;
+      color: #666;
+      font-family: monospace;
+    }
+  </style>
+</head>
+
+<body class="page__body">
+  <div class="site-container">
+    <main class="main">
+      <section class="pages-list">
+        <h1>Все страницы проекта</h1>
+        <div class="pages-list__grid">
+          <div class="pages-list__item">
+            <a href="index.html" class="pages-list__link">Главная страница</a>
+            <div class="pages-list__path">index.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="page-404.html" class="pages-list__link">Страница 404</a>
+            <div class="pages-list__path">page-404.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="page-about.html" class="pages-list__link">О компании</a>
+            <div class="pages-list__path">page-about.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="page-contacts.html" class="pages-list__link">Контакты</a>
+            <div class="pages-list__path">page-contacts.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="page-industry.html" class="pages-list__link">Отрасли</a>
+            <div class="pages-list__path">page-industry.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="page-news.html" class="pages-list__link">Новости</a>
+            <div class="pages-list__path">page-news.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="page-projects.html" class="pages-list__link">Проекты</a>
+            <div class="pages-list__path">page-projects.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="page-services.html" class="pages-list__link">Услуги</a>
+            <div class="pages-list__path">page-services.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="sec-page.html" class="pages-list__link">Вторая страница</a>
+            <div class="pages-list__path">sec-page.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="sec-page-plus.html" class="pages-list__link">Вторая страница Plus</a>
+            <div class="pages-list__path">sec-page-plus.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="single-industry.html" class="pages-list__link">Одна отрасль</a>
+            <div class="pages-list__path">single-industry.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="single-project.html" class="pages-list__link">Один проект</a>
+            <div class="pages-list__path">single-project.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="single-services.html" class="pages-list__link">Одна услуга</a>
+            <div class="pages-list__path">single-services.html</div>
+          </div>
+          <div class="pages-list__item">
+            <a href="content-page.html" class="pages-list__link">Контентная страница</a>
+            <div class="pages-list__path">content-page.html</div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
+
