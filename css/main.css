@@ -3075,6 +3075,8 @@ display: flex;
 .sec-page {
   padding: 64px 0;
   margin: 0 16px;
+  max-width: var(--content-width);
+  margin: 0 auto;
 }
 
 .sec-page--with-menu {
