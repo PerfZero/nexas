@@ -2066,7 +2066,7 @@ display: flex;
 .content-page .projects {
   padding: 0;
   width: calc(100vw - 32px);
-  max-width: calc(1920px - 92px);
+  max-width: calc(1920px - 64px);
 }
 .content-page .technologies .technologies__grid {
   gap: 12px;
@@ -4350,7 +4350,7 @@ padding: 0;
 @media (max-width: 1280px) {
   .projects__slider-wrapper {
     position: relative;
-    max-width: 578px;
+    max-width: 478px;
 }
 
 .swiper-button-prev, .swiper-button-next{
