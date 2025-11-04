@@ -2065,8 +2065,8 @@ display: flex;
 }
 .content-page .projects {
   padding: 0;
-  width: calc(100vw - 96px);
-  max-width: calc(1920px - 96px);
+  width: calc(100vw - 32px);
+  max-width: calc(1920px - 92px);
 }
 .content-page .technologies .technologies__grid {
   gap: 12px;
