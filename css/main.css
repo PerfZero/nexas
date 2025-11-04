@@ -4354,6 +4354,37 @@ margin: 0;
     max-width: 478px;
 }
 
+.content-form{
+  padding: 0 !important;
+}
+
+.page-info__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 44px;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+
+.content-page__title {
+  margin: 0;
+  font-weight: 700;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: var(--dark-color);
+}
+
+.gallery__text {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  max-width: 272px;
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--light-color);
+}
+
 .swiper-button-prev, .swiper-button-next{
   width: 48px;
   height: 48px;
