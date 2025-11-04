@@ -95,11 +95,16 @@ function getClientY(e) {
 }
 
 function handleDragStart(e) {
+  if (e.type === 'dragstart') {
+    e.preventDefault();
+    return false;
+  }
   isDragging = true;
   startX = getClientX(e);
   startY = getClientY(e);
   currentX = startX;
   currentY = startY;
+  e.preventDefault();
 }
 
 function handleDragMove(e) {
@@ -130,12 +135,21 @@ function handleDragEnd(e) {
 if (heroSection) {
   heroSection.addEventListener('mousedown', handleDragStart);
   heroSection.addEventListener('touchstart', handleDragStart);
+  heroSection.addEventListener('dragstart', handleDragStart);
   
   document.addEventListener('mousemove', handleDragMove);
   document.addEventListener('touchmove', handleDragMove);
   
   document.addEventListener('mouseup', handleDragEnd);
   document.addEventListener('touchend', handleDragEnd);
+  
+  const heroImages = heroSection.querySelectorAll('img');
+  heroImages.forEach(img => {
+    img.addEventListener('dragstart', function(e) {
+      e.preventDefault();
+      return false;
+    });
+  });
 }
 
 resetAutoSlide();
